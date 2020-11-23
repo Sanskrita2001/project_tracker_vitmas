@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button';
 import React, { Component } from 'react';
 import logo from './Components/Assets/vitmas gold .png';
 import { Container } from 'react-bootstrap';
+import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 class App extends Component {
 	render() {
@@ -44,6 +45,7 @@ class App extends Component {
 				<Container fluid className='body'>
 					<h1 className='text-white text-center'>Projects</h1>
 				</Container>
+				<Projects />
 				<Footer />
 			</>
 		);
