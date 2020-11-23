@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-
+import Particles from 'react-particles-js';
 export class Projects extends Component {
 	render() {
 		const settings = {
@@ -34,6 +34,26 @@ export class Projects extends Component {
 						<h3>6</h3>
 					</div>
 				</Slider>
+				<Particles
+					params={{
+						particles: {
+							number: {
+								value: 50,
+							},
+							size: {
+								value: 3,
+							},
+						},
+						interactivity: {
+							events: {
+								onhover: {
+									enable: true,
+									mode: 'repulse',
+								},
+							},
+						},
+					}}
+				/>
 			</div>
 		);
 	}

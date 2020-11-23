@@ -8,6 +8,7 @@ import React, { Component } from 'react';
 import logo from './Components/Assets/vitmas gold .png';
 import { Container } from 'react-bootstrap';
 import Projects from './Components/Projects';
+import Particles from 'react-particles-js';
 import Footer from './Components/Footer';
 class App extends Component {
 	render() {
@@ -44,6 +45,26 @@ class App extends Component {
 				</Navbar>
 				<Container fluid className='body'>
 					<h1 className='text-white text-center'>Projects</h1>
+					<Particles
+						params={{
+							particles: {
+								number: {
+									value: 50,
+								},
+								size: {
+									value: 3,
+								},
+							},
+							interactivity: {
+								events: {
+									onhover: {
+										enable: true,
+										mode: 'repulse',
+									},
+								},
+							},
+						}}
+					/>
 				</Container>
 				<Projects />
 				<Footer />
