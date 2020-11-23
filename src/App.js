@@ -16,12 +16,9 @@ class App extends Component {
 			<>
 				<style type='text/css'>
 					{`
-            .navbar{
-              color:white !important;
-            }
-          `}
+  
+          			`}
 				</style>
-				<Navbar fixed='top' />
 				<Navbar bg='dark' variant='dark'>
 					<Navbar.Brand href='#home'>
 						<img
@@ -44,7 +41,6 @@ class App extends Component {
 					</Form>
 				</Navbar>
 				<Container fluid className='body'>
-					<h1 className='text-white text-center'>Projects</h1>
 					<Particles
 						params={{
 							particles: {
